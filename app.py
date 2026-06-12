@@ -35,7 +35,6 @@ st.title("AI智能伴侣")
 for message in st.session_state.messages:
     st.chat_message(message["role"]).write(message["content"])
 
-st.logo("C:/Users/fjxzj/Downloads/emoji_1781080249593.svg")
 system_prompt = f"你的名字叫{st.session_state.name}，{st.session_state.xg}"
 prompt = st.chat_input("请输入要问的问题")
 if prompt:
